@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root {
+        --background-color: rgb(255, 220, 63);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: linear-gradient(to bottom, rgb(31, 29, 29),rgb(20, 24, 38));
+        font-family: sans-serif;
+        color: rgb(204, 202, 202);
+    }
+
+    .welcome {
+        color: var(--background-color);
+        font-size: 3.7rem;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .logo{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 800;
+        
+    }
+    nav {
+        background-color: var(--background-color);
+        color: black;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        height: 40px;
+        padding-inline: 30px;
+    }
+
+    .hori-menu {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+    }
+
+    .hori-menu li {
+        list-style-type: none;
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+    .hori-menu li:after{
+        content:'|';
+    }
+
+    .hori-menu li a {
+        text-decoration: none;
+        color: black;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding:0 35px;
+    }
+    .hori-menu li a:hover{
+        background-color: goldenrod;
+    }
+
+    section {
+        padding: 20px 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+    }
+
+    .subhead {
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    .window {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .gallery {
+        border: 2px solid grey;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    img {
+        width: 150px;
+        height: 200px;
+        margin-bottom: 15px;
+        opacity: .7;
+
+        &:hover {
+            opacity: 1;
+            transform: scale(1.11);
+        }
+    }
+
+    span {
+        color: var(--background-color);
+        font-weight: 700;
+    }
+
+    .gallery:hover {
+        border: 2px solid var(--background-color);
+
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
+        padding: 40px 60px;
+        border: 2px solid var(--background-color);
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form>div {
+        text-align: center;
+        color: var(--background-color);
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
+    label {
+        margin: 20px 0 10px 0;
+    }
+
+    input[type="text"] {
+        border-radius: 5px;
+        height: 30px;
+        border: none;
+        padding-left: 5px;
+    }
+
+    input[type="submit"] {
+        margin-top: 30px;
+        width: 100px;
+        height: 30px;
+        border: none;
+        border-radius: 50px;
+        background-color: var(--background-color);
+        font-size: 1.2rem;
+    }
+    /* Hamburger */
+    .ham-menu{
+        display: none;
+        position: absolute;
+        right:0;
+        padding-inline-end: 30px;
+    }
+    .line{
+        background-color: black;
+        width: 25px;
+        height: 5px;
+        margin-bottom: 3px;
+    }
+    .ver-menu{
+        display: none;
+        /* position: absolute;
+        
+        background-color: var(--background-color);
+        width: 400px; */
+    }
+    .ver-menu li{
+        list-style-type: none;
+    }
+    .ver-menu li a{
+        text-decoration: none ;
+        color: black;
+    }
+    @media (width < 700px){
+        .hori-menu{
+            display: none;
+        }
+        .ham-menu{
+            display:block
+        }
+    }
+
+</style>
+
+<body>
+    <h1 class="welcome">Welcome! Learn Html5</h1>
+    <nav>
+        <div class="logo" >Cars</div>
+        <ul class="ver-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#settings">Settings</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+        <ul class="hori-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#settings">Settings</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+        <div class="ham-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <main>
+        <section class="topsection">
+            <div class="subhead" style="padding-top: 10px;" id="home">Home</div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur sit tenetur beatae
+                doloribus. Maxime cum necessitatibus illo consequatur sed dolores modi ducimus, repellat rem illum
+                inventore ipsam unde exercitationem molestias labore voluptate saepe ratione excepturi aliquam nisi!
+                Deleniti laudantium necessitatibus ullam eveniet sunt illum, iusto, cum corporis aut nulla, voluptates
+                veritatis molestiae ea placeat vero accusantium?</p>
+            <br>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi temporibus
+                consequuntur sed beatae nihil ipsum quo ex, aliquid eum ad saepe placeat minima perferendis. Tempore
+                cupiditate beatae dignissimos necessitatibus voluptatum recusandae a harum modi, odio quia commodi. Et
+                in incidunt aperiam excepturi maiores dolore, dolores vel animi veniam labore perspiciatis sunt, neque
+                cupiditate modi? Distinctio dolorem molestias officia quidem sunt deleniti ab? Aspernatur voluptatibus
+                officiis, vero ipsam omnis cum! Voluptas, assumenda quas repellendus deserunt ad omnis incidunt odio.
+            </p>
+        </section>
+        <section class="botsection">
+            <div class="subhead" id="about">About Us</div>
+            <div class="window">
+                <div class="gallery">
+                    <img src="/work/download (1).jpeg" alt="">
+                    <caption>Fruits are good</caption>
+                    <span>Order Now</span>
+
+                </div>
+                <div class="gallery">
+                    <img src="/work/download (2).jpeg" alt="">
+                    <caption>Eat Fruits From today</caption>
+                    <span>Order Now</span>
+                </div>
+                <div class="gallery">
+                    <img src="/work/download.jpeg" alt="">
+                    <caption>Eat Fruits from now</caption>
+                    <span>Order Now</span>
+
+                </div>
+                <div class="gallery">
+                    <img src="/work/images (1).jpeg" alt="">
+                    <caption>Dont start tomorrow</caption>
+                    <span>Order Now</span>
+
+                </div>
+                <div class="gallery">
+                    <img src="/work/images (2).jpeg" alt="">
+                    <caption>Start Today</caption>
+                    <span>Order Now</span>
+
+                </div>
+                <div class="gallery">
+                    <img src="/work/images.jpeg" alt="">
+                    <caption>Right Now!</caption>
+                    <span>Order Now</span>
+
+                </div>
+            </div>
+        </section>
+        <section class="form" id="contact">
+            <form action="">
+                <div>Contact Us</div>
+                <label for="name">First Name:</label>
+                <input type="text" id="name" placeholder="Enter your name here">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" placeholder="Enter your last name here">
+                <input type="submit" value="Register">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
