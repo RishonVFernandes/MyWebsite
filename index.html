@@ -3,229 +3,72 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    :root {
-        --background-color: rgb(255, 220, 63);
-    }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Create</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+    <link rel="icon" type="image/x-icon" href="/photo-1609805620003-2a785a3b8a56.avif">
+<body  onload="typeWriter()">
+    <h1 class="welcome" ></h1>
+    <nav class="top">
+        <div class="logo">Cars</div>
 
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    body {
-        background: linear-gradient(to bottom, rgb(31, 29, 29),rgb(20, 24, 38));
-        font-family: sans-serif;
-        color: rgb(204, 202, 202);
-    }
-
-    .welcome {
-        color: var(--background-color);
-        font-size: 3.7rem;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .logo{
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 1.5rem;
-        font-weight: 800;
-        
-    }
-    nav {
-        background-color: var(--background-color);
-        color: black;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        display: flex;
-        align-items: center;
-        height: 40px;
-        padding-inline: 30px;
-    }
-
-    .hori-menu {
-        display: flex;
-        align-items: center;
-        font-weight: 700;
-    }
-
-    .hori-menu li {
-        list-style-type: none;
-        height: 40px;
-        display: flex;
-        align-items: center;
-    }
-    .hori-menu li:after{
-        content:'|';
-    }
-
-    .hori-menu li a {
-        text-decoration: none;
-        color: black;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        padding:0 35px;
-    }
-    .hori-menu li a:hover{
-        background-color: goldenrod;
-    }
-
-    section {
-        padding: 20px 50px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-            sans-serif;
-    }
-
-    .subhead {
-        margin-bottom: 15px;
-        font-weight: 700;
-        font-size: 2rem;
-    }
-
-    .window {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
-        justify-content: center;
-    }
-
-    .gallery {
-        border: 2px solid grey;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    img {
-        width: 150px;
-        height: 200px;
-        margin-bottom: 15px;
-        opacity: .7;
-
-        &:hover {
-            opacity: 1;
-            transform: scale(1.11);
-        }
-    }
-
-    span {
-        color: var(--background-color);
-        font-weight: 700;
-    }
-
-    .gallery:hover {
-        border: 2px solid var(--background-color);
-
-    }
-
-    .form {
-        display: flex;
-        justify-content: center;
-    }
-
-    form {
-        padding: 40px 60px;
-        border: 2px solid var(--background-color);
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    form>div {
-        text-align: center;
-        color: var(--background-color);
-        font-weight: 900;
-        font-size: 2rem;
-    }
-
-    label {
-        margin: 20px 0 10px 0;
-    }
-
-    input[type="text"] {
-        border-radius: 5px;
-        height: 30px;
-        border: none;
-        padding-left: 5px;
-    }
-
-    input[type="submit"] {
-        margin-top: 30px;
-        width: 100px;
-        height: 30px;
-        border: none;
-        border-radius: 50px;
-        background-color: var(--background-color);
-        font-size: 1.2rem;
-    }
-    /* Hamburger */
-    .ham-menu{
-        display: none;
-        position: absolute;
-        right:0;
-        padding-inline-end: 30px;
-    }
-    .line{
-        background-color: black;
-        width: 25px;
-        height: 5px;
-        margin-bottom: 3px;
-    }
-    .ver-menu{
-        display: none;
-        /* position: absolute;
-        
-        background-color: var(--background-color);
-        width: 400px; */
-    }
-    .ver-menu li{
-        list-style-type: none;
-    }
-    .ver-menu li a{
-        text-decoration: none ;
-        color: black;
-    }
-    @media (width < 700px){
-        .hori-menu{
-            display: none;
-        }
-        .ham-menu{
-            display:block
-        }
-    }
-
-</style>
-
-<body>
-    <h1 class="welcome">Welcome! Learn Html5</h1>
-    <nav>
-        <div class="logo" >Cars</div>
-        <ul class="ver-menu">
+        <ul class="hori_menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
-            <li><a href="#settings">Settings</a></li>
+            <li style="position: relative;" class="hori_services"><a href="#services">Services</a>
+                <ul class="serv_drops">
+                    <li><a href="web.html">Web</a></li>
+                    <li><a href="#app">App</a></li>
+                    <li><a href="signIn.html">Tech</a></li>
+                </ul>
+            </li>
+
+            <li style="position: relative;" class="hori_settings"><a href="#settings">Settings</a>
+                <ul class="set_drops">
+                    <li><a href="#web">Web</a></li>
+                    <li><a href="app.html">App</a></li>
+                    <li><a href="signIn.html">Tech</a></li>
+                </ul>
+            </li>
             <li><a href="#contact">Contact</a></li>
 
         </ul>
-        <ul class="hori-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#settings">Settings</a></li>
-            <li><a href="#contact">Contact</a></li>
-
-        </ul>
-        <div class="ham-menu">
+        <div>
+            <form action="" class="form1">
+                <input type="text" placeholder="Search here..">
+            </form>
+        </div>
+        <div class="ham_menu ham_cross" onclick="hammenu()">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
+
+        <ul class="ver_menu" id="ver_menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li class="services2"><a href="#services">Services</a>
+                <ul class="serv_ver_drops">
+                    <li><a href="web.html">Web</a></li>
+                    <li><a href="#app">App</a></li>
+                    <li><a href="signIn.html">Tech</a></li>
+                </ul>
+            </li>
+
+            <li class="settings2"><a href="#settings">Settings</a>
+                <ul class="set_ver_drops">
+                    <li><a href="web.html">Web</a></li>
+                    <li><a href="#app">App</a></li>
+                    <li><a href="signIn.html">Tech</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
     </nav>
+
+
     <main>
         <section class="topsection">
             <div class="subhead" style="padding-top: 10px;" id="home">Home</div>
@@ -245,56 +88,61 @@
             </p>
         </section>
         <section class="botsection">
-            <div class="subhead" id="about">About Us</div>
+            <div class="subhead" id="carCollection">Our Car Collection</div>
             <div class="window">
                 <div class="gallery">
-                    <img src="/work/download (1).jpeg" alt="">
+                    <img src="audi.jpeg" alt="">
                     <caption>Fruits are good</caption>
-                    <span>Order Now</span>
+                    <span class="sub_captions">Order Now</span>
 
                 </div>
                 <div class="gallery">
-                    <img src="/work/download (2).jpeg" alt="">
+                    <img src="bugatti.jpeg" alt="">
                     <caption>Eat Fruits From today</caption>
-                    <span>Order Now</span>
+                    <span class="sub_captions">Order Now</span>
                 </div>
                 <div class="gallery">
-                    <img src="/work/download.jpeg" alt="">
+                    <img src="ferrari.jpeg" alt="">
                     <caption>Eat Fruits from now</caption>
-                    <span>Order Now</span>
+                    <span class="sub_captions">Order Now</span>
 
                 </div>
                 <div class="gallery">
-                    <img src="/work/images (1).jpeg" alt="">
+                    <img src="lamborghini.jpeg" alt="">
                     <caption>Dont start tomorrow</caption>
-                    <span>Order Now</span>
+                    <span class="sub_captions">Order Now</span>
 
                 </div>
                 <div class="gallery">
-                    <img src="/work/images (2).jpeg" alt="">
+                    <img src="mclaren.jpeg" alt="">
                     <caption>Start Today</caption>
-                    <span>Order Now</span>
+                    <span class="sub_captions">Order Now</span>
 
                 </div>
                 <div class="gallery">
-                    <img src="/work/images.jpeg" alt="">
+                    <img src="rollsroyce.jpeg" alt="">
                     <caption>Right Now!</caption>
-                    <span>Order Now</span>
+                    <span class="sub_captions">Order Now</span>
 
                 </div>
             </div>
         </section>
-        <section class="form" id="contact">
-            <form action="">
+        <section class="contact_space" id="contact">
+            <form action="" class="form2" name="myform">
                 <div>Contact Us</div>
                 <label for="name">First Name:</label>
-                <input type="text" id="name" placeholder="Enter your name here">
+                <input type="text" id="name" name="name" placeholder="Enter your name here">
                 <label for="lname">Last Name:</label>
-                <input type="text" id="lname" placeholder="Enter your last name here">
-                <input type="submit" value="Register">
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name here">
+                <input type="submit" value="Register" onclick="return regis()">
             </form>
         </section>
     </main>
+    <footer><div class="social_media">
+<a href=""><i class="fa fa-fw fa-home"></i></a>
+    </div></footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>

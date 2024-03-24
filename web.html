@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1 class="welcome">Welcome! Learn With Me</h1>
+    <nav class="top">
+        <div class="logo">Cars</div>
+
+        <ul class="hori_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li style="position: relative;" class="hori_services"><a href="#services">Services</a>
+                <ul class="serv_drops">
+                    <li><a href="web.html">Web</a></li>
+                    <li><a href="#app">App</a></li>
+                    <li><a href="signIn.html">Tech</a></li>
+                </ul>
+            </li>
+
+            <li style="position: relative;" class="hori_settings"><a href="#settings">Settings</a>
+                <ul class="set_drops">
+                    <li><a href="#web">Web</a></li>
+                    <li><a href="#app">App</a></li>
+                    <li><a href="signIn.html">Tech</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+        <div>
+            <form action="" class="form1">
+                <input type="text" placeholder="Search here..">
+            </form>
+        </div>
+        <div class="ham_menu ham_cross" onclick="hammenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <ul class="ver_menu" id="ver_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li class="services2"><a href="#services">Services</a>
+                <ul class="serv_ver_drops">
+                    <li><a href="#web">Web</a></li>
+                    <li><a href="#app">App</a></li>
+                    <li><a href="signIn.html">Tech</a></li>
+                </ul>
+            </li>
+
+            <li class="settings2"><a href="#settings">Settings</a>
+                <ul class="set_ver_drops">
+                    <li><a href="#web">Web</a></li>
+                    <li><a href="#app">App</a></li>
+                    <li><a href="signIn.html">Tech</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Shapes</h1>
+        <section class="shapes">
+            <div class="trapezium"></div>
+            <div class="parallelogram"></div>
+            <div class="triangle-bottom"></div>
+            <div class="triangle-top"></div>
+            <div class="circle"></div>
+            <div class="oval"></div>
+        </section>
+
+        <h1 style="user-select: none;">Download Link</h1>
+        <section class="download-link">
+            
+            <img src="/car_image4.jpeg" alt="Car">
+            <a href="/car_image4.jpeg" download="logo">
+                Download Now
+            </a>
+        </section>
+        <p contenteditable="true">This is an editable paragraph.</p>
+
+        <h1>Countdown timer</h1>
+        <section class="countdown-timer">
+            <p id="countdown"></p>
+        </section>
+
+        <h1>Loaders</h1>
+        <div class="loader"></div>
+
+        <div class="loader2"></div>
+        <p>Right arrow: <i class="arrow right"></i></p>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

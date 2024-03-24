@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="welcome">Welcome! Learn With Me</h1>
+    <nav class="top">
+        <div class="logo">Cars</div>
+
+        <ul class="hori_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li style="position: relative;" class="hori_services"><a href="#services">Services</a>
+                <ul class="serv_drops">
+                    <li><a href="#web">Web</a></li>
+                    <li><a href="#app">App</a></li>
+                    <li><a href="signIn.html">Tech</a></li>
+                </ul>
+            </li>
+
+            <li style="position: relative;" class="hori_settings"><a href="#settings">Settings</a>
+                <ul class="set_drops">
+                    <li><a href="#web">Web</a></li>
+                    <li><a href="#app">App</a></li>
+                    <li><a href="signIn.html">Tech</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+        <div>
+            <form action="" class="form1">
+                <input type="text" placeholder="Search here..">
+            </form>
+        </div>
+        <div class="ham_menu ham_cross" onclick="hammenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <ul class="ver_menu" id="ver_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li class="services2"><a href="#services">Services</a>
+                <ul class="serv_ver_drops">
+                    <li><a href="#web">Web</a></li>
+                    <li><a href="#app">App</a></li>
+                    <li><a href="signIn.html">Tech</a></li>
+                </ul>
+            </li>
+
+            <li class="settings2"><a href="#settings">Settings</a>
+                <ul class="set_ver_drops">
+                    <li><a href="#web">Web</a></li>
+                    <li><a href="#app">App</a></li>
+                    <li><a href="signIn.html">Tech</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <section class="signinForm">
+            <form action="" class="form2" name="signinform">
+                <div>Sign In</div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email here">
+                <span class="error" id="error_email">Please enter valid email address</span>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password here">
+                <span class="error" id="error_password">Please enter password more than 8 characters</span>
+
+                <input type="submit" value="Sign In" onclick="return regis()">
+            </form>
+            <script src="main.js"></script>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
