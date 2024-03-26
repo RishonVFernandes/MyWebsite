@@ -193,6 +193,7 @@ label {
     width: 25px;
     height: 5px;
     margin-bottom: 3px;
+    border-radius: 50px;
 }
 
 /* .ham_cross{
@@ -207,8 +208,20 @@ label {
     background-color: var(--background-color);
     right: 0;
     height: 75vh;
-    width: 50vw;
+    width: 200px;
     overflow: hidden;
+    animation-name: slide;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+}
+
+@keyframes slide{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 200px;
+    }
 }
 
 .ver_menu>li {
@@ -556,4 +569,23 @@ footer {
     &:hover{
         opacity: .8;
     }
+}
+
+
+.topX{
+    transition: all .5s ;
+    transform: rotate(45deg);
+    transform-origin: left center;
+    width:90%
+}
+.middleX{
+    transition: all .5s ;
+    opacity: 0;
+}
+.bottomX{
+    transition: all .5s;
+    transform: rotate(-45deg);
+    transform-origin: left center;
+    width: 90%;
+
 }

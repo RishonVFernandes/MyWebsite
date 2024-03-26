@@ -1,11 +1,22 @@
 
 function hammenu() {
     let x = document.getElementById('ver_menu');
+    let top_line = document.getElementById('top_line');
+    let middle_line = document.getElementById('middle_line');
+    let bottom_line = document.getElementById('bottom_line');
     if (x.style.display === 'block') {
+
         x.style.display = 'none';
+        top_line.classList.remove('topX');
+        middle_line.classList.remove('middleX');
+        bottom_line.classList.remove('bottomX')
     }
     else {
+
         x.style.display = 'block';
+        top_line.classList.add('topX');
+        middle_line.classList.add('middleX');
+        bottom_line.classList.add('bottomX')
     }
 }
 // let x = document.querySelector('.ham-menu');
@@ -26,17 +37,17 @@ function regis() {
         if (password.length <= 5) {
             // alert("Email is too short, please enter a valid one");
             document.getElementById('error_password').style.visibility = "visible";
-            
+
         }
         document.getElementById('error_email').style.visibility = "visible";
         return false;
     }
     else {
         let password = document.signinform.password.value;
-        if(password.length <= 5){
+        if (password.length <= 5) {
             // alert("Email is too short, please enter a valid one");
             document.getElementById('error_password').style.visibility = "visible";
-          return false;           
+            return false;
         }
     }
 
@@ -70,8 +81,8 @@ let i = 0;
 let txt = 'Welcome! Learn With Me';
 let speed = 100;
 
-function typeWriter(){
-    if (i < txt.length){
+function typeWriter() {
+    if (i < txt.length) {
         document.querySelector(".welcome").innerHTML += txt.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
