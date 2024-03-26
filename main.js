@@ -1,23 +1,20 @@
 
-function hammenu() {
-    let x = document.getElementById('ver_menu');
-    if (x.style.display === 'block') {
-        x.style.display = 'none';
-    }
-    else {
-        x.style.display = 'block';
-    }
-}
-// let x = document.querySelector('.ham-menu');
-// x.addEventListener('click', ()=>{
-//     let ver_menu = document.getElementById('ver_menu');
-//     if (ver_menu.style.diplay === 'block'){
-//         ver_menu.style.display = 'none';
+// Typewriter
+
+// let i = 0;
+// let txt = 'Welcome! Learn With Me';
+// let speed = 100;
+
+// function typeWriter(){
+//     if (i < txt.length){
+//         document.querySelector(".welcome").innerHTML += txt.charAt(i);
+//         i++;
+//         setTimeout(typeWriter, speed);
 //     }
-//     else{
-//         ver_menu.style.display = 'block';
-//     }
-// })
+// }
+
+// Form
+
 
 function regis() {
     let email = document.signinform.email.value;
@@ -26,17 +23,17 @@ function regis() {
         if (password.length <= 5) {
             // alert("Email is too short, please enter a valid one");
             document.getElementById('error_password').style.visibility = "visible";
-            
+
         }
         document.getElementById('error_email').style.visibility = "visible";
         return false;
     }
     else {
         let password = document.signinform.password.value;
-        if(password.length <= 5){
+        if (password.length <= 5) {
             // alert("Email is too short, please enter a valid one");
             document.getElementById('error_password').style.visibility = "visible";
-          return false;           
+            return false;
         }
     }
 
@@ -64,22 +61,19 @@ function regis() {
 //     }
 // }, 1000);
 
-// Typewriter
+//ham menu
+function myfunction() {
+    
+        let ver_menu = document.getElementById('ver_menu');
 
-let i = 0;
-let txt = 'Welcome! Learn With Me';
-let speed = 100;
+        if (ver_menu.style.display == 'none') {
+            ver_menu.style.display = 'block';
+            return x = 0;
+        }
 
-function typeWriter(){
-    if (i < txt.length){
-        document.querySelector(".welcome").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-    }
+        if (x = 0) {
+            ver_menu.style.display = 'none';
+            return x = 1;
+        }
+
 }
-
-// let btn = document.querySelector('.blue_btn');
-
-// btn.addEventListener('click' , () => {
-//     body.
-// })
