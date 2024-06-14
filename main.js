@@ -38,11 +38,12 @@ function regis() {
 
     let atPosition = email.indexOf("@");
     let dotPosition = email.lastIndexOf(".");
-    if (atPosition < 1 || dotPosition < atPosition+2 || dotPosition+2 >= email.length) {
+    if (atPosition < 1 || dotPosition < atPosition + 2 || dotPosition + 2 >= email.length) {
         let password = document.signinform.password.value;
         if (password.length <= 5) {
             // alert("Email is too short, please enter a valid one");
             document.getElementById('error_password').style.visibility = "visible";
+
 
         }
         document.getElementById('error_email').style.visibility = "visible";
@@ -51,12 +52,15 @@ function regis() {
     else {
         let password = document.signinform.password.value;
         if (password.length <= 5) {
-            // alert("Email is too short, please enter a valid one");
-            document.getElementById('error_password').style.visibility = "visible";
-            return false;
+            if (password.length <= 5) {
+                // alert("Email is too short, please enter a valid one");
+                document.getElementById('error_password').style.visibility = "visible";
+                return false;
+                return false;
+            }
         }
-    }
 
+    }
 }
 
 
@@ -95,20 +99,4 @@ function typeWriter() {
     }
 }
 
-
-// const arr = [1,2,3,4,5];
-// const output = arr.map((num) => num + 2)
-// console.log(arr);
-// console.log(output);
-
-// const arr = [3405,4,234,865,23,70968];
-
-// const maxNum = arr.reduce((max, curr) => {
-//     if(curr > max){
-//         max = curr;
-//     }
-//     return max;
-// })
-
-// console.log(maxNum);
 
