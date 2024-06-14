@@ -9,24 +9,25 @@
 </head>
 <body>
     <h1 class="welcome">Welcome! Learn With Me</h1>
-    <nav class="top">
+    <nav class="navigation_bar">
         <div class="logo">Cars</div>
 
-        <ul class="hori_menu">
+        <ul class="horizontal_menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="#about">About Us</a></li>
-            <li style="position: relative;" class="hori_services"><a href="#services">Services</a>
-                <ul class="serv_drops">
+            <li style="position: relative;" class="horizontal_services"><a href="#services">Services</a>
+                <ul class="services_dropdown">
                     <li><a href="web.html">Web</a></li>
-                    <li><a href="#app">App</a></li>
+                    <li><a href="app.html">App</a></li>
                     <li><a href="signIn.html">Tech</a></li>
+                    <li><a href="sections.html">Section</a></li>
                 </ul>
             </li>
 
-            <li style="position: relative;" class="hori_settings"><a href="#settings">Settings</a>
-                <ul class="set_drops">
-                    <li><a href="#web">Web</a></li>
-                    <li><a href="#app">App</a></li>
+            <li style="position: relative;" class="horizontal_settings"><a href="#settings">Settings</a>
+                <ul class="settings_dropdown">
+                    <li><a href="web.html">Web</a></li>
+                    <li><a href="app.html">App</a></li>
                     <li><a href="signIn.html">Tech</a></li>
                 </ul>
             </li>
@@ -38,27 +39,29 @@
                 <input type="text" placeholder="Search here..">
             </form>
         </div>
-        <div class="ham_menu ham_cross" onclick="hammenu()">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+
+        <div class="ham_menu" id="ham_menu" onclick="hammenu()">
+            <div class="line" id="top_line"></div>
+            <div class="line" id="middle_line"></div>
+            <div class="line" id="bottom_line"></div>
         </div>
 
-        <ul class="ver_menu" id="ver_menu">
+        <ul class="vertical_menu" id="vertical_menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="#about">About Us</a></li>
-            <li class="services2"><a href="#services">Services</a>
-                <ul class="serv_ver_drops">
-                    <li><a href="#web">Web</a></li>
-                    <li><a href="#app">App</a></li>
+            <li class="vertical_services"><a href="#services">Services</a>
+                <ul class="vertical_services_dropdown">
+                    <li><a href="web.html">Web</a></li>
+                    <li><a href="app.html">App</a></li>
                     <li><a href="signIn.html">Tech</a></li>
+                    <li><a href="sections.html">Section</a></li>
                 </ul>
             </li>
 
-            <li class="settings2"><a href="#settings">Settings</a>
-                <ul class="set_ver_drops">
-                    <li><a href="#web">Web</a></li>
-                    <li><a href="#app">App</a></li>
+            <li class="vertical_settings"><a href="#settings">Settings</a>
+                <ul class="vertical_settings_dropdown">
+                    <li><a href="web.html">Web</a></li>
+                    <li><a href="app.html">App</a></li>
                     <li><a href="signIn.html">Tech</a></li>
                 </ul>
             </li>

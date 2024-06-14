@@ -1,12 +1,14 @@
 
 function hammenu() {
-    let x = document.getElementById('ver_menu');
+    let x = document.getElementById('vertical_menu');
     let top_line = document.getElementById('top_line');
     let middle_line = document.getElementById('middle_line');
     let bottom_line = document.getElementById('bottom_line');
     if (x.style.display === 'block') {
 
         x.style.display = 'none';
+        document.getElementById('ham_menu').style.right = '0px';
+
         top_line.classList.remove('topX');
         middle_line.classList.remove('middleX');
         bottom_line.classList.remove('bottomX')
@@ -14,6 +16,7 @@ function hammenu() {
     else {
 
         x.style.display = 'block';
+        document.getElementById('ham_menu').style.right = '-2.5px';
         top_line.classList.add('topX');
         middle_line.classList.add('middleX');
         bottom_line.classList.add('bottomX')
@@ -21,18 +24,21 @@ function hammenu() {
 }
 // let x = document.querySelector('.ham-menu');
 // x.addEventListener('click', ()=>{
-//     let ver_menu = document.getElementById('ver_menu');
-//     if (ver_menu.style.diplay === 'block'){
-//         ver_menu.style.display = 'none';
+//     let vertical_menu = document.getElementById('vertical_menu');
+//     if (vertical_menu.style.diplay === 'block'){
+//         vertical_menu.style.display = 'none';
 //     }
 //     else{
-//         ver_menu.style.display = 'block';
+//         vertical_menu.style.display = 'block';
 //     }
 // })
 
 function regis() {
     let email = document.signinform.email.value;
-    if (email.length <= 5) {
+
+    let atPosition = email.indexOf("@");
+    let dotPosition = email.lastIndexOf(".");
+    if (atPosition < 1 || dotPosition < atPosition+2 || dotPosition+2 >= email.length) {
         let password = document.signinform.password.value;
         if (password.length <= 5) {
             // alert("Email is too short, please enter a valid one");
@@ -89,8 +95,20 @@ function typeWriter() {
     }
 }
 
-// let btn = document.querySelector('.blue_btn');
 
-// btn.addEventListener('click' , () => {
-//     body.
+// const arr = [1,2,3,4,5];
+// const output = arr.map((num) => num + 2)
+// console.log(arr);
+// console.log(output);
+
+// const arr = [3405,4,234,865,23,70968];
+
+// const maxNum = arr.reduce((max, curr) => {
+//     if(curr > max){
+//         max = curr;
+//     }
+//     return max;
 // })
+
+// console.log(maxNum);
+
