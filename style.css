@@ -206,14 +206,7 @@ body {
 
 
 
-@media (width < 600px) {
-    .horizontal_menu {
-        display: none;
-    }
 
-
-
-}
 
 section {
     padding: 100px 50px;
@@ -355,7 +348,7 @@ footer {
         display: none;
     }
 
-    .hamburger {
+    .ham_menu {
         display: block;
     }
 }
